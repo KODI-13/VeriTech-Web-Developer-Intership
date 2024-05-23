@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <section></section>
+        <div class="rFlags"></div>
+    </div>
+    
+
+    <section class="cName hideen">
+        <div class="box">
+            <span>Company Name</span>
+        </div>
+    </section>
+
+
+    <section class="welcome-message hidden">
+        <p>Welcome to [Your Company Name], where a dedicated team of professionals works together to bring innovation, creativity, and expertise to the software industry. Get to know the individuals who make our company thrive.</p>
+        <hr class="new2">
+    </section>
+
+
+    <h2 class="hidden">Meet Our Team</h2>
+
+
+    <section class="c1 hidden">
+        <div class="allBox">
+            <span>Leadership / Management Team</span>
+        </div>
+    </section>
+
+    <div class="team-member hidden">
+        <div class="row">
+            <div class="im1">
+                <img src="img3.jpg" alt="Founder Name 1">
+                <p><strong>Founder Name 1</strong></p>
+                <p>Founder/CEO</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="Founder Name 2">
+                <p><strong>Founder Name 2</strong></p>
+                <p>Founder/CTO</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 1">
+                <p><strong>VP Name 1</strong></p>
+                <p>VP, Development & Growth</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 2">
+                <p><strong>VP Name 2</strong></p>
+                <p>VP, Sales & Marketing</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>VP Name 3</strong></p>
+                <p>VP, Finance & Operations</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container hidden">
+        <div class="lFlags"></div>
+        <section class="headings hidden">
+            <div class="allBox">
+                <span>Development Team</span>
+            </div>
+        </section>
+    </div>
+
+    <div class="team-memberd hidden">
+        <div class="row">
+            <div class="im1">
+                <img src="img3.jpg" alt="Founder Name 1">
+                <p><strong>Developer Name 1</strong></p>
+                <p>Team Lead, SE</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="Founder Name 2">
+                <p><strong>Developer Name 2</strong></p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 1">
+                <p><strong>Developer Name 3</strong></p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 2">
+                <p><strong>Developer Name 4</strong></p>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>Developer Name 5</strong></p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>Developer Name 6</strong></p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>Developer Name 7</strong></p>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container hidden">
+        <section class="c2 hidden">
+            <div class="allBox">
+                <span>Sales and Marketing Team</span>
+            </div>
+        </section>
+        <div class="rFlags"></div>
+    </div>
+
+    <div class="team-member hidden">
+        <div class="row">
+            <div class="im1">
+                <img src="img3.jpg" alt="Employee Name 1">
+                <p><strong>Employee Name 1</strong></p>
+                <p>Team Lead</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="Employee Name 2">
+                <p><strong>Employee Name 2</strong></p>
+                <p>Sales Officer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="Employee Name 3">
+                <p><strong>Employee Name 3</strong></p>
+                <p>Sales Officer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="Employee Name 3">
+                <p><strong>Employee Name 4</strong></p>
+                <p>Sales Officer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>Founder Name</strong></p>
+                <p>Marketing Officer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>Founder Name</strong></p>
+                <p>Marketing Officer</p>
+            </div>
+            <div class="im1">
+                <img src="img3.jpg" alt="VP Name 3">
+                <p><strong>Founder Name</strong></p>
+                <p>Marketing Officer</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hidden">
+        <div class="lFlags"></div>
+        <section class="headings hidden"></section>
+    </div>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        hiddenElements.forEach(el => observer.observe(el));
+    });
+</script>
+
+</html>
