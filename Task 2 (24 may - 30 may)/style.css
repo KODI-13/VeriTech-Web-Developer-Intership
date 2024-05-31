@@ -1,0 +1,260 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-button.secondary {
+    background-color: #007bff;
+    margin-left: 10px;
+}
+
+.introduction, .features, .performance, .sustainability, .testimonials, .cta {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.performance video {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+}
+
+.introduction img {
+    width: 100%;
+    /* max-width: 600px; */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.introduction img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features img {
+    width: 200px;
+    /* max-width: 200px; Ensuring icons are not too large */
+    height: 150px;
+    /* height: auto; */
+    margin: 0 auto 20px auto; /* Center the images and add spacing below */
+    display: block;
+    border-radius: 10px; /* Optional: if you want rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature {
+    text-align: center; /* Center align text and images within each feature */
+    padding: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Additional optional styling to ensure overall section looks good */
+.features {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 60px 20px;
+}
+
+.features h3 {
+    margin-top: 0;
+}
+
+.features p {
+    margin-bottom: 0;
+}
+
+/* Sustainability Section */
+.sustainability img {
+    width: 90%; /* Ensures the image is responsive */
+    /* max-width: 1000px; Set a maximum width for larger screens */
+    height: 60%; /* Maintain the aspect ratio */
+    margin-top: 20px; /* Add spacing above the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sustainability img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+/* Additional styling for the sustainability section */
+.sustainability {
+    background-color: #eaf4f2; /* Light green background for a sustainable theme */
+    padding: 60px 20px;
+    text-align: center; /* Center-align text and image */
+}
+
+.sustainability h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.sustainability p {
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 40px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align text */
+}
+
+footer .container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+footer .footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0 0 20px 0; /* Margin below the links */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    gap: 30px; /* Space between items */
+}
+
+footer .footer-links li {
+    display: inline; /* Inline display for list items */
+}
+
+footer .footer-links a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+footer .footer-links a:hover {
+    color: #1e90ff; /* Change color on hover */
+}
+
+footer .social-media {
+    margin-bottom: 20px; /* Margin below the social media icons */
+}
+
+footer .social-media a {
+    display: inline-block; /* Inline-block for the links */
+    margin: 0 10px; /* Horizontal margin between icons */
+    transition: transform 0.3s; /* Smooth transition for transform */
+}
+
+footer .social-media img {
+    width: 30px; /* Fixed width for icons */
+    height: 30px; /* Fixed height for icons */
+}
+
+footer .social-media a:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+footer p {
+    margin: 0; /* Remove margin */
+    font-size: 14px; /* Smaller font size */
+    color: #aaa; /* Lighter color for the copyright text */
+}
